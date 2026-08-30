@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* NAVBAR */
+
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    background: white;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #6558f5;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6558f5;
+}
+
+
+/* HOME */
+
+.home {
+    min-height: calc(100vh - 80px);
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background: linear-gradient(135deg, #f7f5ff, #ffffff);
+}
+
+.home-text {
+    max-width: 700px;
+}
+
+.hello {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.home h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.home h2 {
+    font-size: 28px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.intro {
+    font-size: 19px;
+    color: #555;
+    max-width: 700px;
+}
+
+.buttons {
+    margin-top: 35px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #6558f5;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(101, 88, 245, 0.3);
+}
+
+.outline-btn {
+    background: white;
+    color: #6558f5;
+    border: 2px solid #6558f5;
+}
+
+
+/* PROFILE PHOTO */
+
+.profile-container {
+    width: 280px;
+    height: 280px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 7px solid white;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+}
+
+
+/* COMMON SECTION */
+
+section {
+    padding: 90px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 45px;
+    color: #222;
+}
+
+
+/* ABOUT */
+
+#about {
+    background: white;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+/* SKILLS */
+
+#skills {
+    background: #f7f5ff;
+}
+
+.skills-container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.skill {
+    padding: 14px 25px;
+    background: white;
+    border-radius: 30px;
+    font-weight: bold;
+    color: #6558f5;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* PROJECTS */
+
+.projects-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project-card {
+    padding: 30px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+}
+
+.project-card h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #6558f5;
+}
+
+.project-card p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: #6558f5;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+
+/* CERTIFICATIONS */
+
+#certifications {
+    background: #f7f5ff;
+}
+
+.certificate-card {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.certificate-card h3 {
+    color: #6558f5;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+/* CONTACT */
+
+#contact {
+    text-align: center;
+}
+
+.contact-text {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: white;
+    background: #6558f5;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #181818;
+    color: white;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+    nav {
+        padding: 0 5%;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .home h1 {
+        font-size: 48px;
+    }
+
+    .home h2 {
+        font-size: 23px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .profile-container {
+        width: 240px;
+        height: 240px;
+    }
+
+    .profile-photo {
+        width: 220px;
+        height: 220px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        height: auto;
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 65px 6%;
+    }
+
+    .home {
+        min-height: auto;
+        gap: 30px;
+    }
+
+    .home h1 {
+        font-size: 40px;
+    }
+
+    .hello {
+        font-size: 20px;
+    }
+
+    .home h2 {
+        font-size: 20px;
+    }
+
+    .intro,
+    .about-content p,
+    .contact-text {
+        font-size: 16px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-title {
+        font-size: 31px;
+    }
+
+    .profile-container {
+        width: 220px;
+        height: 220px;
+    }
+
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+}
